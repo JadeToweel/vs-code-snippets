@@ -1,0 +1,7 @@
+# Files that start with 'local' will not be
+# committed to version control. For instance,
+# you can keep your own personal snippets in, say,
+# local-rockstar.code-snippets and local-lisp.code-snippets,
+# and they won't be shared with others using this repo.
+
+local*

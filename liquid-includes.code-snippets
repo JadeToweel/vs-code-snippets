@@ -1,0 +1,101 @@
+{
+	"Liquid if tags": {
+		"scope": "markdown,html",
+		"prefix": [
+			"if"
+		],
+		"body": [
+			"{% if $1 %}",
+			"    $0",
+			"{% endif %}"
+		],
+		"description": "Inserts Liquid if tags in markdown and HTML"
+	},
+	"Liquid unless tags": {
+		"scope": "markdown,html",
+		"prefix": [
+			"unless"
+		],
+		"body": [
+			"{% unless $1 %}",
+			"    $0",
+			"{% endunless %}"
+		],
+		"description": "Inserts Liquid unless tags in markdown and HTML"
+	},
+	"Liquid else tag": {
+		"scope": "markdown,html",
+		"prefix": [
+			"else"
+		],
+		"body": [
+			"{% else %}"
+		],
+		"description": "Inserts a Liquid else tag in markdown and HTML"
+	},
+	"Liquid for-loop tags": {
+		"scope": "markdown,html",
+		"prefix": [
+			"for"
+		],
+		"body": [
+			"{% for $1 in $2 %}",
+			"    $0",
+			"{% endfor %}"
+		],
+		"description": "Inserts Liquid for-loop tags in markdown and HTML"
+	},
+	"Liquid capture tag": {
+		"scope": "markdown,html",
+		"prefix": [
+			"capture"
+		],
+		"body": [
+			"{% capture $1 %}$2{% endcapture %}",
+			"$0"
+		],
+		"description": "Inserts a Liquid capture tag in markdown and HTML"
+	},
+	"Liquid assign tag": {
+		"scope": "markdown,html",
+		"prefix": [
+			"assign"
+		],
+		"body": [
+			"{% assign $1 = $2 %}",
+			"$0"
+		],
+		"description": "Inserts a Liquid assign tag in markdown and HTML"
+	},
+	"Liquid include tag": {
+		"scope": "markdown,html",
+		"prefix": [
+			"incl"
+		],
+		"body": [
+			"{% include ${1:figure} %}",
+			"$0"
+		],
+		"description": "Inserts a generic include tag in markdown and HTML"
+	},
+	"Add a figure include": {
+		"scope": "markdown,html",
+		"prefix": "fg",
+		"body": [
+			"{% include figure",
+			"	${1:images=\"$2\"}",
+			"	${3:html=\"$4\"}",
+			"	${5:markdown=\"$6\"}",
+			"	${7:reference=\"$8\"}",
+			"	${9:link=\"$10\"}",
+			"	${11:caption=\"$12\"}",
+			"	${13:title=\"$14\"}",
+			"	${15:description=\"$16\"}",
+			"	${17:source=\"$18\"}",
+			"	${19:class=\"$20\"}",
+			"%}",
+			"$0"
+		],
+		"description": "Inserts a figure include in a markdown file"
+	}
+}
