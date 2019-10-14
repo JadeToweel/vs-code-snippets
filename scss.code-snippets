@@ -1,0 +1,10 @@
+{
+    "Media query for the EBT": {
+        "scope": "scss,css",
+        "prefix": "media",
+        "body": [
+            "@media only screen and (min-width: \\$break-width-${1:small}) {$0}",
+        ],
+        "description": "Inserts a min-width media query for EBT web styles"
+    }
+}
