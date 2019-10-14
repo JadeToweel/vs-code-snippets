@@ -1,6 +1,16 @@
 {
+	"Liquid comment": {
+		"scope": "markdown,html,liquid",
+		"prefix": [
+			"comment"
+		],
+		"body": [
+			"{% comment %} $0 {% endcomment %}"
+		],
+		"description": "Inserts Liquid comment tags"
+	},
 	"Liquid if tags": {
-		"scope": "markdown,html",
+		"scope": "markdown,html,liquid",
 		"prefix": [
 			"if"
 		],
@@ -9,10 +19,10 @@
 			"    $0",
 			"{% endif %}"
 		],
-		"description": "Inserts Liquid if tags in markdown and HTML"
+		"description": "Inserts Liquid if tags"
 	},
 	"Liquid unless tags": {
-		"scope": "markdown,html",
+		"scope": "markdown,html,liquid",
 		"prefix": [
 			"unless"
 		],
@@ -21,20 +31,20 @@
 			"    $0",
 			"{% endunless %}"
 		],
-		"description": "Inserts Liquid unless tags in markdown and HTML"
+		"description": "Inserts Liquid unless tags"
 	},
 	"Liquid else tag": {
-		"scope": "markdown,html",
+		"scope": "markdown,html,liquid",
 		"prefix": [
 			"else"
 		],
 		"body": [
 			"{% else %}"
 		],
-		"description": "Inserts a Liquid else tag in markdown and HTML"
+		"description": "Inserts a Liquid else tag"
 	},
 	"Liquid for-loop tags": {
-		"scope": "markdown,html",
+		"scope": "markdown,html,liquid",
 		"prefix": [
 			"for"
 		],
@@ -43,10 +53,10 @@
 			"    $0",
 			"{% endfor %}"
 		],
-		"description": "Inserts Liquid for-loop tags in markdown and HTML"
+		"description": "Inserts Liquid for-loop tags"
 	},
 	"Liquid capture tag": {
-		"scope": "markdown,html",
+		"scope": "markdown,html,liquid",
 		"prefix": [
 			"capture"
 		],
@@ -54,10 +64,10 @@
 			"{% capture $1 %}$2{% endcapture %}",
 			"$0"
 		],
-		"description": "Inserts a Liquid capture tag in markdown and HTML"
+		"description": "Inserts a Liquid capture tag"
 	},
 	"Liquid assign tag": {
-		"scope": "markdown,html",
+		"scope": "markdown,html,liquid",
 		"prefix": [
 			"assign"
 		],
@@ -65,21 +75,21 @@
 			"{% assign $1 = $2 %}",
 			"$0"
 		],
-		"description": "Inserts a Liquid assign tag in markdown and HTML"
+		"description": "Inserts a Liquid assign tag"
 	},
 	"Liquid include tag": {
-		"scope": "markdown,html",
+		"scope": "markdown,html,liquid",
 		"prefix": [
-			"incl"
+			"include"
 		],
 		"body": [
 			"{% include ${1:figure} %}",
 			"$0"
 		],
-		"description": "Inserts a generic include tag in markdown and HTML"
+		"description": "Inserts a generic include tag"
 	},
 	"Add a figure include": {
-		"scope": "markdown,html",
+		"scope": "markdown,html,liquid",
 		"prefix": "fg",
 		"body": [
 			"{% include figure",
