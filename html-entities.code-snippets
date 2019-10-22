@@ -2,12 +2,12 @@
 	// HTML entities often need to be inserted mid-word,
 	// but most snippet prefixes won't work mid-word.
 	// To enable a snippet prefix to trigger correctly,
-	// we start these prefixes with a full stop, which
+	// we start these prefixes with a hash (#), which
 	// signals to VS Code that we're not typing the word,
 	// but something new, making it recognisable as a prefix.
 	"Non-breaking space": {
 		"scope": "",
-		"prefix": ".nb",
+		"prefix": "#nb",
 		"body": [
 			"&nbsp;"
 		],
@@ -15,7 +15,7 @@
 	},
 	"Discretionary (soft) hyphen": {
 		"scope": "",
-		"prefix": ".sh",
+		"prefix": "#sh",
 		"body": [
 			"&shy;"
 		],
