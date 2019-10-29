@@ -37,7 +37,7 @@
         "body": [
             "function ${1:name}(${2:parameter}) {",
             "    'use strict';",
-            "    $0;"
+            "    $0"
             "}"
         ],
         "description": "Insert a function"
