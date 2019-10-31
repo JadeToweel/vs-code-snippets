@@ -27,7 +27,7 @@
         "body": [
             "${1:array}.forEach(function (${2:item}) {;",
             "    $0${2:item}",
-            "}"
+            "});"
         ],
         "description": "Insert a forEach statement"
     },
