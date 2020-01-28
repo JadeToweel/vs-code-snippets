@@ -41,5 +41,24 @@
             "}"
         ],
         "description": "Insert a function"
+    },
+    "Use strict": {
+        "scope": "javascript",
+        "prefix": "strict",
+        "body": [
+            "'use strict';"
+        ],
+        "description": "Insert 'use strict';"
+    },
+    "Use strict": {
+        "scope": "javascript",
+        "prefix": "jslint",
+        "body": [
+            "/*jslint browser */",
+            "/*globals */",
+            "",
+            "// "
+        ],
+        "description": "Insert 'use strict';"
     }
 }
