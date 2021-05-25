@@ -1,0 +1,13 @@
+{
+	"kramdown verse tag": {
+		"scope": "markdown,html,liquid",
+		"prefix": [
+			"vrs"
+		],
+		"body": [
+            ""
+			"{:.verse}$0"
+		],
+		"description": "Inserts verse class tag"
+	}
+}
