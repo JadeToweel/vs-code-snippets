@@ -107,5 +107,16 @@
 			"$0"
 		],
 		"description": "Inserts a figure include in a markdown file"
+	},
+	"Add definition include": {
+		"scope": "markdown,html,liquid",
+		"prefix": [
+			"dfn"
+		],
+		"body": [
+			"{% include definition term='$1' %}",
+			"$0"
+		],
+		"description": "Inserts a definition include tag"
 	}
 }
