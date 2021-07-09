@@ -1,6 +1,6 @@
 {
 	"kramdown verse tag": {
-		"scope": "markdown,html,liquid",
+		"scope": "markdown",
 		"prefix": [
 			"vrs"
 		],
@@ -9,5 +9,27 @@
 			"{:.verse}$0"
 		],
 		"description": "Inserts verse class tag"
+	},
+	"tighten tag": {
+		"scope": "markdown",
+		"prefix": [
+			"t5"
+		],
+		"body": [
+			"{:.tighten-${1:5}$0}"
+			""
+		],
+		"description": "Inserts a tighten-* class tag"
+	},
+	"loosen tag": {
+		"scope": "markdown",
+		"prefix": [
+			"l5"
+		],
+		"body": [
+			"{:.loosen-${1:5}$0}"
+			""
+		],
+		"description": "Inserts a tighten-* class tag"
 	}
 }
