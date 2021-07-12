@@ -5,7 +5,7 @@
 			"vrs"
 		],
 		"body": [
-            ""
+            "",
 			"{:.verse}$0"
 		],
 		"description": "Inserts verse class tag"
@@ -16,7 +16,7 @@
 			"t5"
 		],
 		"body": [
-			"{:.tighten-${1:5}$0}"
+			"{:.tighten-${1:5}$0}",
 			""
 		],
 		"description": "Inserts a tighten-* class tag"
@@ -27,24 +27,24 @@
 			"l5"
 		],
 		"body": [
-			"{:.loosen-${1:5}$0}"
+			"{:.loosen-${1:5}$0}",
 			""
 		],
 		"description": "Inserts a tighten-* class tag"
 	},
     "dynamic indexing tag": {
-	"scope": "markdown",
-	"prefix": [
-		"inx"
-	],
-	"body": [
-		"<!--index:
-		
-		-->"
-		""
-	],
-	"description": "Inserts dynamic index tag"
-}
+		"scope": "markdown",
+		"prefix": [
+			"inx"
+		],
+		"body": [
+			"<!--index:",
+			"",
+			"-->",
+			""
+		],
+		"description": "Inserts dynamic index tag"
+	}
 
 
 }
