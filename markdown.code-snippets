@@ -31,5 +31,20 @@
 			""
 		],
 		"description": "Inserts a tighten-* class tag"
-	}
+	},
+    "dynamic indexing tag": {
+	"scope": "markdown",
+	"prefix": [
+		"inx"
+	],
+	"body": [
+		"<!--index:
+		
+		-->"
+		""
+	],
+	"description": "Inserts dynamic index tag"
+}
+
+
 }
