@@ -21,6 +21,16 @@
 		],
 		"description": "Inserts Liquid if tags"
 	},
+	"Liquid endif tag": {
+		"scope": "markdown,html,liquid",
+		"prefix": [
+			"endif"
+		],
+		"body": [
+			"{% endif %}$0"
+		],
+		"description": "Inserts a Liquid endif tag"
+	},
 	"Liquid unless tags": {
 		"scope": "markdown,html,liquid",
 		"prefix": [
@@ -32,6 +42,16 @@
 			"{% endunless %}"
 		],
 		"description": "Inserts Liquid unless tags"
+	},
+	"Liquid endunless tag": {
+		"scope": "markdown,html,liquid",
+		"prefix": [
+			"endunless"
+		],
+		"body": [
+			"{% endunless %}$0"
+		],
+		"description": "Inserts a Liquid endunless tag"
 	},
 	"Liquid else tag": {
 		"scope": "markdown,html,liquid",
