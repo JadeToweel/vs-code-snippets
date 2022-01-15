@@ -25,8 +25,8 @@
         "scope": "javascript",
         "prefix": "foreach",
         "body": [
-            "${1:array}.forEach(function (${2:item}) {;",
-            "    $0${2:item}",
+            "${1:array}.forEach(function (${2:item}) {",
+            "    $0${2:item};",
             "});"
         ],
         "description": "Insert a forEach statement"
@@ -50,15 +50,14 @@
         ],
         "description": "Insert 'use strict';"
     },
-    "Use strict": {
+    "JS Lint directives": {
         "scope": "javascript",
         "prefix": "jslint",
         "body": [
             "/*jslint browser */",
             "/*globals */",
-            "",
-            "// "
+            ""
         ],
-        "description": "Insert 'use strict';"
+        "description": "Insert template JS Lint directives"
     }
 }
