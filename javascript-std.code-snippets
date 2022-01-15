@@ -1,63 +1,53 @@
 {
-    // Please only create JSLint-friendly Javascript snippets.
-    // JSLint is strict and painful but great for beginners
-    // who need its constraints to learn and develop good habits.
-    "Log to console": {
+    // These are Javascript Standard snippets:
+    // https://standardjs.com/
+
+    "Log to console (Std)": {
         "scope": "javascript",
         "prefix": "log",
         "body": [
-            "console.log(${1:'$0'});"
+            "console.log(${1:'$0'})"
         ],
         "description": "Insert a console.log statement"
     },
-	"For loop": {
+	"For loop (Std)": {
 		"scope": "javascript",
 		"prefix": "for",
 		"body": [
-            "var ${1:i};",
+            "var ${1:i}",
             "for (${1:i} = 0; ${1:i} < ${2:array}.length; ${1:i} += 1) {",
-            "    $0${2:array}[${1:i}];",
+            "  $0${2:array}[${1:i}]",
             "}"
 		],
 		"description": "Insert a for loop"
 	},
-    "forEach": {
+    "forEach (Std)": {
         "scope": "javascript",
         "prefix": "foreach",
         "body": [
             "${1:array}.forEach(function (${2:item}) {",
-            "    $0${2:item};",
+            "  $0${2:item}",
             "});"
         ],
         "description": "Insert a forEach statement"
     },
-    "Function": {
+    "Function (Std)": {
         "scope": "javascript",
         "prefix": "fn",
         "body": [
             "function ${1:name}(${2:parameter}) {",
-            "    'use strict';",
-            "    $0"
+            "  'use strict'",
+            "  $0"
             "}"
         ],
         "description": "Insert a function"
     },
-    "Use strict": {
+    "Use strict (Std)": {
         "scope": "javascript",
         "prefix": "strict",
         "body": [
-            "'use strict';"
+            "'use strict'"
         ],
         "description": "Insert 'use strict';"
-    },
-    "JS Lint directives": {
-        "scope": "javascript",
-        "prefix": "jslint",
-        "body": [
-            "/*jslint browser */",
-            "/*globals */",
-            ""
-        ],
-        "description": "Insert template JS Lint directives"
     }
 }
