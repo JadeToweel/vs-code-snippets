@@ -1,8 +1,8 @@
 {
-    // Please only create JSLint-friendly Javascript snippets.
-    // JSLint is strict and painful but great for beginners
-    // who need its constraints to learn and develop good habits.
-    "Log to console": {
+    // These are JS Lint Javascript snippets.
+    // JSLint is strict and painful but good for beginners
+    // who will learn a lot from its constraints.
+    "Log to console (JS Lint)": {
         "scope": "javascript",
         "prefix": "log",
         "body": [
@@ -10,7 +10,15 @@
         ],
         "description": "Insert a console.log statement"
     },
-	"For loop": {
+    "Debug to console (JS Lint)": {
+        "scope": "javascript",
+        "prefix": "debug",
+        "body": [
+            "console.debug(${1:'$0'});"
+        ],
+        "description": "Insert a console.debug statement"
+    },
+	"For loop (JS Lint)": {
 		"scope": "javascript",
 		"prefix": "for",
 		"body": [
@@ -21,7 +29,7 @@
 		],
 		"description": "Insert a for loop"
 	},
-    "forEach": {
+    "forEach (JS Lint)": {
         "scope": "javascript",
         "prefix": "foreach",
         "body": [
@@ -31,18 +39,18 @@
         ],
         "description": "Insert a forEach statement"
     },
-    "Function": {
+    "Function (JS Lint)": {
         "scope": "javascript",
         "prefix": "fn",
         "body": [
             "function ${1:name}(${2:parameter}) {",
             "    'use strict';",
-            "    $0"
+            "    $0",
             "}"
         ],
         "description": "Insert a function"
     },
-    "Use strict": {
+    "Use strict (JS Lint)": {
         "scope": "javascript",
         "prefix": "strict",
         "body": [
@@ -50,7 +58,7 @@
         ],
         "description": "Insert 'use strict';"
     },
-    "JS Lint directives": {
+    "JS Lint directives (JS Lint)": {
         "scope": "javascript",
         "prefix": "jslint",
         "body": [

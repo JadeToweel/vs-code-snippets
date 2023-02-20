@@ -10,6 +10,14 @@
         ],
         "description": "Insert a console.log statement"
     },
+    "Debug to console (Std)": {
+        "scope": "javascript",
+        "prefix": "debug",
+        "body": [
+            "console.debug(${1:'$0'})"
+        ],
+        "description": "Insert a console.debug statement"
+    },
 	"For loop (Std)": {
 		"scope": "javascript",
 		"prefix": "for",
@@ -37,7 +45,7 @@
         "body": [
             "function ${1:name}(${2:parameter}) {",
             "  'use strict'",
-            "  $0"
+            "  $0",
             "}"
         ],
         "description": "Insert a function"
