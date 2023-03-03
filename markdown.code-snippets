@@ -44,7 +44,26 @@
 			""
 		],
 		"description": "Inserts dynamic index tag"
+	},
+	"first-paragraph tag": {
+		"scope": "markdown",
+		"prefix": [
+			"fst"
+		],
+		"body": [
+			"{:.first}$0"
+		],
+		"description": "Inserts a {:.first} tag"
+	},
+	"sidenote tag": {
+		"scope": "markdown",
+		"prefix": [
+			"snt"
+		],
+		"body": [
+			"{:.sidenote}",
+			"$0"
+		],
+		"description": "Inserts a {:.sidenote} class tag"
 	}
-
-
 }
