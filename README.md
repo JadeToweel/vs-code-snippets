@@ -40,7 +40,10 @@ In VS Code, markdown does not get snippet functionality by default, and you have
 
 ```json
     "[markdown]": {
-        "editor.quickSuggestions": true
+        "editor.quickSuggestions": {
+            "comments": "on",
+            "strings": "on",
+            "other": "on"
     },
 ```
 
