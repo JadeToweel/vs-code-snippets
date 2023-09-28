@@ -53,3 +53,4 @@ You may already have a `"[markdown]"` section, in which case you're only adding 
 
 Files that start with `local` will not be committed to version control. For instance, you can keep your own personal snippets in, say, `local-rockstar.code-snippets` and `local-lisp.code-snippets`, and they won't be shared with others using this repo.
 
+Refer to the VS Code docs for guidance on [creating your own snippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_create-your-own-snippets).
