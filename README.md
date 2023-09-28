@@ -4,7 +4,7 @@ The [Electric Book Works](https://electricbookworks.com) team uses these snippet
 
 ## Setup
 
-[This post](https://betterprogramming.pub/creating-and-syncing-personal-snippets-in-vs-code-d03a8d441019) explains how to sync this repo with your global snippets. In short:
+To sync this repo with your global snippets (originally taken from [this now deleted post](https://betterprogramming.pub/creating-and-syncing-personal-snippets-in-vs-code-d03a8d441019)):
 
 > On macOS, these files are stored in your User/Library. In Windows, it’s User/AppData. Here are the commands I used to create those symlinks from my usual projects folder over to where VS Code is looking for them. If you already have a snippets folder in your app data folder, the symlink command will fail. You’ll have to delete the snippets folder to be able to create the symlink (just make sure to back up any existing snippets you may have).
 >
