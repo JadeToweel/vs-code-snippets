@@ -30,7 +30,7 @@ For example, let's say Arthur has cloned this repo to `c:\src\vs-code-snippets`.
 mklink /D c:\Users\Arthur\AppData\Roaming\Code\User\snippets c:\src\vs-code-snippets
 ```
 
-Now VS Code's `User\snippets` folder actually points to his cloned of this repo at `c:\src\vs-code-snippets`. When he updates the repo, his VS Code snippets are updated automatically, because they actually live in that repo.
+Now VS Code's `User\snippets` folder actually points to his clone of this repo at `c:\src\vs-code-snippets`. When he updates the repo, his VS Code snippets are updated automatically, because they actually live in that repo.
 
 Keep in mind, though, that this repo on his machine is now the only place he can store global snippets. If he creates any snippets that he does not want to share with others in this repo, he must not commit them in Git.
 
