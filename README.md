@@ -4,7 +4,7 @@ The [Electric Book Works](https://electricbookworks.com) team uses these snippet
 
 ## Setup
 
-[This post](https://betterprogramming.pub/creating-and-syncing-personal-snippets-in-vs-code-d03a8d441019) explains how to sync this repo with your global snippets. In short:
+To sync this repo with your global snippets (originally taken from [this now deleted post](https://betterprogramming.pub/creating-and-syncing-personal-snippets-in-vs-code-d03a8d441019)):
 
 > On macOS, these files are stored in your User/Library. In Windows, it’s User/AppData. Here are the commands I used to create those symlinks from my usual projects folder over to where VS Code is looking for them. If you already have a snippets folder in your app data folder, the symlink command will fail. You’ll have to delete the snippets folder to be able to create the symlink (just make sure to back up any existing snippets you may have).
 >
@@ -40,7 +40,10 @@ In VS Code, markdown does not get snippet functionality by default, and you have
 
 ```json
     "[markdown]": {
-        "editor.quickSuggestions": true
+        "editor.quickSuggestions": {
+            "comments": "on",
+            "strings": "on",
+            "other": "on"
     },
 ```
 
@@ -50,3 +53,4 @@ You may already have a `"[markdown]"` section, in which case you're only adding 
 
 Files that start with `local` will not be committed to version control. For instance, you can keep your own personal snippets in, say, `local-rockstar.code-snippets` and `local-lisp.code-snippets`, and they won't be shared with others using this repo.
 
+Refer to the VS Code docs for guidance on [creating your own snippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_create-your-own-snippets).
