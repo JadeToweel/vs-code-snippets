@@ -4,7 +4,7 @@ The [Electric Book Works](https://electricbookworks.com) team uses these snippet
 
 ## Setup
 
-[This post](https://betterprogramming.pub/creating-and-syncing-personal-snippets-in-vs-code-d03a8d441019) explains how to sync this repo with your global snippets. In short:
+To sync this repo with your global snippets (originally taken from [this now deleted post](https://betterprogramming.pub/creating-and-syncing-personal-snippets-in-vs-code-d03a8d441019)):
 
 > On macOS, these files are stored in your User/Library. In Windows, it’s User/AppData. Here are the commands I used to create those symlinks from my usual projects folder over to where VS Code is looking for them. If you already have a snippets folder in your app data folder, the symlink command will fail. You’ll have to delete the snippets folder to be able to create the symlink (just make sure to back up any existing snippets you may have).
 >
@@ -30,7 +30,7 @@ For example, let's say Arthur has cloned this repo to `c:\src\vs-code-snippets`.
 mklink /D c:\Users\Arthur\AppData\Roaming\Code\User\snippets c:\src\vs-code-snippets
 ```
 
-Now VS Code's `User\snippets` folder actually points to his cloned of this repo at `c:\src\vs-code-snippets`. When he updates the repo, his VS Code snippets are updated automatically, because they actually live in that repo.
+Now VS Code's `User\snippets` folder actually points to his clone of this repo at `c:\src\vs-code-snippets`. When he updates the repo, his VS Code snippets are updated automatically, because they actually live in that repo.
 
 Keep in mind, though, that this repo on his machine is now the only place he can store global snippets. If he creates any snippets that he does not want to share with others in this repo, he must not commit them in Git.
 
@@ -40,7 +40,10 @@ In VS Code, markdown does not get snippet functionality by default, and you have
 
 ```json
     "[markdown]": {
-        "editor.quickSuggestions": true
+        "editor.quickSuggestions": {
+            "comments": "on",
+            "strings": "on",
+            "other": "on"
     },
 ```
 
@@ -50,3 +53,4 @@ You may already have a `"[markdown]"` section, in which case you're only adding 
 
 Files that start with `local` will not be committed to version control. For instance, you can keep your own personal snippets in, say, `local-rockstar.code-snippets` and `local-lisp.code-snippets`, and they won't be shared with others using this repo.
 
+Refer to the VS Code docs for guidance on [creating your own snippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_create-your-own-snippets).
